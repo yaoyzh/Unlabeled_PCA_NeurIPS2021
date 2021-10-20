@@ -1,0 +1,1 @@
+To install the package, extract the archive in the directory of your choice. Then run the function init_fom.m at the root of the FOM directory. 
