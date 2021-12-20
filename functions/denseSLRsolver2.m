@@ -14,7 +14,7 @@ tic
 X_solved_ccv = X_tilde;
 for j = idOutliers
     y = X_tilde(:, j);
-    [c_hat, ~, ~] = SLR_cvx_max_v4(U_solved, y);
+    [c_hat, ~, ~] = CCVMin(U_solved, y);
     X_solved_ccv(:, j) = U_solved * c_hat;
 end
 time_ccv = toc;
